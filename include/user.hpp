@@ -12,6 +12,7 @@ namespace Github {
 	class User {
 	public:
 		User(std::string user_name);
+		User(nlohmann::json user);
 		std::string nick();
 		std::string name();
 		std::string avatar_url();
@@ -33,6 +34,9 @@ namespace Github {
 		nlohmann::json j;
 		this->m_json = j.parse(ret);
 		
+	}
+	User::User(nlohmann::json user) {
+		this->m_json = user;
 	}
 
 	std::string User::nick() {

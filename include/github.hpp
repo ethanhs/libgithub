@@ -5,6 +5,7 @@
 
 
 #include "user.hpp"
+#include "repo.hpp"
 
 
 namespace Github {
