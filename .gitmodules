@@ -1,0 +1,6 @@
+[submodule "libs/cpr"]
+	path = libs/cpr
+	url = https://github.com/whoshuu/cpr
+[submodule "libs/json"]
+	path = libs/json
+	url = https://github.com/nlohmann/json/
